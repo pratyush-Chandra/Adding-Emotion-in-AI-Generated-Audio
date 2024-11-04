@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #333;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+.header code {
+  color: #f1c40f;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.input-form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+form {
+  border: 1px solid whitesmoke;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  width: 50%;
+  background-color: whitesmoke;
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.text-input,
+.audio-input {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.audio-input i.first {
+  font-size: 3rem;
+  color: black;
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.audio-input i.first:hover {
+  background-color: #333;
+  color: red;
+}
+
+.audio-input input {
+  display: none;
+}
+
+.audio-input div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px dashed black;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  color: #333;
+}
+
+.audio-file-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+form label {
+  font-size: medium;
+  margin-bottom: 0.5rem;
+}
+form textarea {
+  width: calc(100% - 1.5rem);
+  height: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #333;
+}
+.adv-opt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0rem;
+  cursor: pointer;
+  width: 100%;
+}
+.adv-opt-opt-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.adv-opt-opt-rows:nth-child(2) {
+  margin-bottom: 2.5rem;
+}
+.switch-btn span {
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  background-color: #ddd;
+  transition: 0.3s;
+  padding: 0 1.5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch-btn span::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  position: absolute;
+  left: 0.25rem;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.switch-btn input {
+  display: none;
+}
+
+.switch-btn input:checked ~ span {
+  background-color: #333;
+}
+
+.switch-btn input:checked ~ span::before {
+  left: 1.5rem;
+}
+form select {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #333;
+  font-size: small;
+  cursor: pointer;
+}
+form button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  background-color: whitesmoke;
+  color: #333;
+  font-size: medium;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  margin: 0px auto;
+}
+form button:hover {
+  background-color: #333;
+  color: whitesmoke;
+}
+.hidden {
+  display: none;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <title>Adding emotion in AI generated audio</title>
+  </head>
+  <body>
+    <div class="header">
+      Adding emotion in AI generated audio<br /><code>Prototype</code>
+    </div>
+    <div class="input-form">
+      <form>
+        <div class="input-container">
+          <div class="text-input">
+            <label for="text">Text Input</label>
+            <textarea
+              id="text"
+              name="text"
+              class="input-textarea"
+              placeholder="Input the Text Here..."
+            ></textarea>
+          </div>
+          <div class="audio-input">
+            <label for="audio">Audio Input</label>
+            <i class="bx bxs-microphone first"></i>
+            <input
+              type="file"
+              id="audio"
+              name="audio"
+              accept="audio/*"
+              class="audio"
+            />
+            <div class="audio-file-input">
+              <i class="bx bx-upload second"></i>
+              <span>Upload Audio File</span>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="adv-opt">
+          <div class="adv-text">Advance Options</div>
+          <div class="plus-sign">+</div>
+        </div>
+        <div class="adv-opt-opt hidden">
+          <div class="adv-opt-opt-rows">
+            <label for="checkbox" class="adv-text"
+              >Manual Emotion Override</label
+            >
+            <div class="checkbox" id="checkbox">
+              <label class="switch-btn">
+                <input type="checkbox" class="checkbox" />
+                <span></span>
+              </label>
+            </div>
+          </div>
+          <div class="adv-opt-opt-rows">
+            <label for="select-opt" class="adv-text">Voice Gender Type</label>
+            <div class="select-opt" id="select-opt">
+              <select name="gender-select" id="gender-select" class="select">
+                <option value="default">Default</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="submit-btn">Submit</button>
+      </form>
+    </div>
+    <script src="../static/js/index.js"></script>
+  </body>
+</html>
